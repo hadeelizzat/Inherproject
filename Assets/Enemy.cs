@@ -7,10 +7,11 @@ public class Enemy : Character
     public Enemy(string name, int health) : base(name, health)
     {
     }
+    public void Attack(int amount, Character character)
+    {
+        character.Health -= amount;
+        Debug.Log(character.Health);
+    }
 
-    public void Attack(int amount) {
-        Health-=amount;
-         Debug.Log(Health);
-     }
-    
+  
 }

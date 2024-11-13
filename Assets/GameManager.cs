@@ -7,10 +7,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Player subhi =new Player("subhi",90);
-        Enemy Zarifeh=new Enemy("lama",100);
-        subhi.Heal(20);
-        Zarifeh.Attack(120);
+        Player subhi = new Player("subhi", 60);
+        Enemy Zarifeh = new Enemy("Zarifeh", 100);
+        subhi.Heal(25);
+        Zarifeh.Attack(60, subhi);
         
     }
 
